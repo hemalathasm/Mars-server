@@ -1,3 +1,13 @@
+terraform {
+  cloud {
+    organization = "me_myself"
+
+    workspaces {
+      name = "Mars-server"
+    }
+  }
+}
+
 #1. VPC creation
 resource "aws_vpc" "mars-vpc" {
   cidr_block           = var.cidr-vpc
