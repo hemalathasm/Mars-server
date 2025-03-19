@@ -1,3 +1,5 @@
+variable "hcp_client_secret" {}
+
 variable "region" {
   default = "us-east-2"
   type    = string
